@@ -3,6 +3,10 @@
 ### Integrantes:  
 - Nome: Paula Regina Nascimento Korber
 - E-mail: paulareginakorber@gmail.com | paula.korber@unioeste.br  
+- Nome: Maryanne de Oliveira Gomes
+- E-mail: pohamaryy@gmail.com | maryanne.gomes@unioeste.br
+- Nome: Jamile Hassen Sá
+- E-mail: jamilehassensa@gmail.com | jamile.hassen@unioeste.br
 ---
 ### Releases:
 - [x] Iteração 1 (03/11/2022): Matrizes e Funções
