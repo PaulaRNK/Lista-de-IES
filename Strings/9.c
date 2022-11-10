@@ -20,7 +20,6 @@ void scanNomes(char* lista[], int* n){
         (*n)++;
         if(*n<20) scanf("%[^\n]%*c", str);
     }
-
 }
 
 void separaNomes(Pessoa* p[], char* lista[], int n){
@@ -49,20 +48,42 @@ void printPessoas(Pessoa* p[], int n){
 }
 
 int comparaPrenome(const void* a, const void* b){
-    Pessoa p1 = *((Pessoa*) a);
-    Pessoa p2 = *((Pessoa*) b);
-    printf("%s | %s\n", p1.prenome, p2.prenome);
-    return strcmp( p1.prenome, p2.prenome );
+    const Pessoa* p1 = *((const Pessoa**) a);
+    const Pessoa* p2 = *((const Pessoa**) b);
+    return strcmp( p1->prenome, p2->prenome );
+}
+
+int comparasSobrenome(const void* a, const void* b){
+    const Pessoa* p1 = *((const Pessoa**) a);
+    const Pessoa* p2 = *((const Pessoa**) b);
+    return strcmp( p1->sobrenome, p2->sobrenome );
+}
+
+double mediaLetras(Pessoa* p[], int n){
+    double soma=0;
+    int i;
+    for(i=0 ; i<n ; i++) soma+=p[i]->letras;
+    return soma/i;
 }
 
 int main(){
     char* lista[20];
     Pessoa* p[20];
     int n;
+
     scanNomes(lista, &n);
     separaNomes(p, lista, n);
+
     qsort(p, n, sizeof(Pessoa*), comparaPrenome);
+    printf("Prenomes ordenados:\n");
     printPessoas(p, n);
+
+    qsort(p, n, sizeof(Pessoa*), comparasSobrenome);
+    printf("Sobrenomes ordenados:\n");
+    printPessoas(p, n);
+
+    printf("Media: %.01f\n", mediaLetras(p, n));
+
     return 0;
 }
 
