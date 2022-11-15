@@ -10,8 +10,8 @@
 ---
 ### Releases:
 - [x] Iteração 1 (03/11/2022): Matrizes e Funções
-- [ ] Iteração 2 (10/11/2022): Strings, Parâmetros e estruturas
-- [ ] Iteração 3 (17/11/2022): Controle de fluxo e Programas sequencias simples
+- [x] Iteração 2 (10/11/2022): Strings, Parâmetros e estruturas
+- [x] Iteração 3 (17/11/2022): Controle de fluxo e Programas sequencias simples
 ---
 ### Ambiente de Desenvolvimento:
 - IDE: CodeBlocks (20.03)
