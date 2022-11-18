@@ -48,7 +48,5 @@ Os grupos estão dividos em pastas contendo seus respectivos exercícios enumera
 12. Lê uma string e retorna o endereço do primeiro carácter vazio.
 13. Recebe um número e sua base e converte para a base decimal.
 ---
-### Parâmetros:
-1. aaaa
 
   
